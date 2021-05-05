@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 class ViewController: UITableViewController {
 
@@ -14,38 +15,45 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        title = "Shopping List"
+        title = "Quick To-Do"
         
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .badge, .sound]) {
+            granted, error in
+            if granted {
+                print("Yay")
+            }else {
+                print("NO")
+            }
+           
+        }
+      
         
+         center.removeAllPendingNotificationRequests()
+         
+         let content = UNMutableNotificationContent()
+         content.title = "Lets add some items to your list!"
+         content.body = "Manage your tasks in order!"
+         content.categoryIdentifier = "alarm"
+         content.sound = .default
+        //When to show , 10.30 every morning, example of daily notification
+       var dateComponents = DateComponents()
+        dateComponents.hour = 10
+        dateComponents.minute = 30
+       
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        center.add(request)
     }
-//    @IBAction func clearTapped(_ sender: Any) {
-//        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return}
-//        let managedContext = appDelegate.persistentContainer
-//       
-//        let entityNames = managedContext.managedObjectModel.entities.map({$0.name!})
-//        entityNames.forEach { [weak self] entityName in
-//            let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Bag")
-//            let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
-//            
-//            do {
-//                try managedContext.viewContext.execute(deleteRequest)
-//                shoppingItems.removeAll()
-//                
-//                try managedContext.viewContext.save()
-//                try self?.tableView.reloadData()
-//                try managedContext.viewContext.save()
-//
-//            }
-//            catch {
-//                print("Cant be deleted all")
-//            }
-//        }
-//        
-//        
-//    }
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") else { return UITableViewCell() }
         cell.textLabel?.text = shoppingItems[indexPath.row]
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd HH:mm"
+        let time = dateFormatter.string(from: Date())
+
+        cell.detailTextLabel?.text = time
         return cell
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -152,7 +160,7 @@ class ViewController: UITableViewController {
     }
     
     @IBAction func addTapped(_ sender: Any) {
-        let ac = UIAlertController(title: "Add Item", message: "Time to go shopping", preferredStyle: .alert)
+        let ac = UIAlertController(title: "Add Item", message: "What do you want to add?", preferredStyle: .alert)
         ac.addTextField { textField in
             textField.placeholder = "Item"
         }
