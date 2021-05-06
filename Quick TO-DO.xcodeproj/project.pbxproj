@@ -17,12 +17,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		59F8C2A12635F74C00CFCF62 /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F8C2A12635F74C00CFCF62 /* Quick TO-DO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick TO-DO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F8C2A42635F74C00CFCF62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F8C2A62635F74C00CFCF62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		59F8C2A82635F74C00CFCF62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59F8C2AB2635F74C00CFCF62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		59F8C2AE2635F74C00CFCF62 /* ShoppingList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingList.xcdatamodel; sourceTree = "<group>"; };
+		59F8C2AE2635F74C00CFCF62 /* Quick TO-DO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Quick TO-DO.xcdatamodel"; sourceTree = "<group>"; };
 		59F8C2B02635F74C00CFCF62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59F8C2B32635F74C00CFCF62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59F8C2B52635F74C00CFCF62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		59F8C2982635F74C00CFCF62 = {
 			isa = PBXGroup;
 			children = (
-				59F8C2A32635F74C00CFCF62 /* ShoppingList */,
+				59F8C2A32635F74C00CFCF62 /* Quick TO-DO */,
 				59F8C2A22635F74C00CFCF62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		59F8C2A22635F74C00CFCF62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59F8C2A12635F74C00CFCF62 /* ShoppingList.app */,
+				59F8C2A12635F74C00CFCF62 /* Quick TO-DO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		59F8C2A32635F74C00CFCF62 /* ShoppingList */ = {
+		59F8C2A32635F74C00CFCF62 /* Quick TO-DO */ = {
 			isa = PBXGroup;
 			children = (
 				59F8C2A42635F74C00CFCF62 /* AppDelegate.swift */,
@@ -67,15 +67,15 @@
 				59F8C2B52635F74C00CFCF62 /* Info.plist */,
 				59F8C2AD2635F74C00CFCF62 /* ShoppingList.xcdatamodeld */,
 			);
-			path = ShoppingList;
+			path = "Quick TO-DO";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		59F8C2A02635F74C00CFCF62 /* ShoppingList */ = {
+		59F8C2A02635F74C00CFCF62 /* Quick TO-DO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59F8C2B82635F74C00CFCF62 /* Build configuration list for PBXNativeTarget "ShoppingList" */;
+			buildConfigurationList = 59F8C2B82635F74C00CFCF62 /* Build configuration list for PBXNativeTarget "Quick TO-DO" */;
 			buildPhases = (
 				59F8C29D2635F74C00CFCF62 /* Sources */,
 				59F8C29E2635F74C00CFCF62 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = ShoppingList;
+			name = "Quick TO-DO";
 			productName = ShoppingList;
-			productReference = 59F8C2A12635F74C00CFCF62 /* ShoppingList.app */;
+			productReference = 59F8C2A12635F74C00CFCF62 /* Quick TO-DO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 59F8C29C2635F74C00CFCF62 /* Build configuration list for PBXProject "ShoppingList" */;
+			buildConfigurationList = 59F8C29C2635F74C00CFCF62 /* Build configuration list for PBXProject "Quick TO-DO" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				59F8C2A02635F74C00CFCF62 /* ShoppingList */,
+				59F8C2A02635F74C00CFCF62 /* Quick TO-DO */,
 			);
 		};
 /* End PBXProject section */
@@ -291,12 +291,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = D3GP35956U;
-				INFOPLIST_FILE = ShoppingList/Info.plist;
+				INFOPLIST_FILE = "Quick TO-DO/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.istemihancelik.ShoppingList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -310,12 +312,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = D3GP35956U;
-				INFOPLIST_FILE = ShoppingList/Info.plist;
+				INFOPLIST_FILE = "Quick TO-DO/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.istemihancelik.ShoppingList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -326,7 +330,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		59F8C29C2635F74C00CFCF62 /* Build configuration list for PBXProject "ShoppingList" */ = {
+		59F8C29C2635F74C00CFCF62 /* Build configuration list for PBXProject "Quick TO-DO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59F8C2B62635F74C00CFCF62 /* Debug */,
@@ -335,7 +339,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59F8C2B82635F74C00CFCF62 /* Build configuration list for PBXNativeTarget "ShoppingList" */ = {
+		59F8C2B82635F74C00CFCF62 /* Build configuration list for PBXNativeTarget "Quick TO-DO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59F8C2B92635F74C00CFCF62 /* Debug */,
@@ -350,9 +354,9 @@
 		59F8C2AD2635F74C00CFCF62 /* ShoppingList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				59F8C2AE2635F74C00CFCF62 /* ShoppingList.xcdatamodel */,
+				59F8C2AE2635F74C00CFCF62 /* Quick TO-DO.xcdatamodel */,
 			);
-			currentVersion = 59F8C2AE2635F74C00CFCF62 /* ShoppingList.xcdatamodel */;
+			currentVersion = 59F8C2AE2635F74C00CFCF62 /* Quick TO-DO.xcdatamodel */;
 			path = ShoppingList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
